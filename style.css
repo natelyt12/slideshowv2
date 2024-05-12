@@ -1,0 +1,64 @@
+/* rgb(59, 59, 59) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wdth@0,75..100;1,75..100&display=swap');
+
+* {
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 5px 5px;
+}
+
+button {
+    padding: 5px 0px;
+    border: 1px solid rgb(59, 59, 59);
+    background: transparent;
+    color: white;
+}
+
+button:active {
+    border: white 1px solid;
+}
+
+#start {
+    width: 150px;
+}
+
+#info {
+    width: 50px;
+}
+
+#info-container {
+    color: white;
+    position: absolute;
+    border: 1px solid rgb(59, 59, 59);
+    padding: 5px 10px;
+    margin-left: 5px;
+    bottom: 40px;
+    left: -250px;
+    transition: all 1000ms cubic-bezier(0.000, 1.620, 0.715, 0.995);
+    span {
+        font-size: 80%;
+        color: rgb(204, 204, 204);
+    }
+    p {
+        padding: 0;
+        margin: 3px 0px;
+    }
+
+}
+
+.on{
+    position: absolute;
+    transform: translateX(250px);
+}
