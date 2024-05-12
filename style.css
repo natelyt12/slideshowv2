@@ -38,6 +38,10 @@ button:active {
     width: 50px;
 }
 
+#video{
+    padding: 5px 10px;
+}
+
 #info-container {
     color: white;
     position: absolute;
