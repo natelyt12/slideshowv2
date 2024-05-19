@@ -214,7 +214,7 @@ function letsgo() {
     setTimeout(() => {
         c28.style.width = '0%'
         c29.style.width = '100%'
-    }, 64.68);
+    }, 64680);
 
 }
 
