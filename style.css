@@ -29,7 +29,7 @@ button {
     color: white;
 }
 
-button:hover{
+button:hover {
     background-color: #ffffff1e;
 }
 
@@ -74,39 +74,78 @@ button:active {
 
 /* Spinner loading */
 .loader {
-    display: flex;
-    align-items: center;
-  }
-  
-  .bar {
-    display: inline-block;
-    width: 3px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, .5);
-    border-radius: 10px;
-    animation: scale-up4 1s linear infinite;
-  }
-  
-  .bar:nth-child(2) {
-    height: 35px;
-    margin: 0 5px;
-    animation-delay: .25s;
-  }
-  
-  .bar:nth-child(3) {
-    animation-delay: .5s;
-  }
-  
-  @keyframes scale-up4 {
-    20% {
-      background-color: #ffff;
-      transform: scaleY(1.5);
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+    opacity: 0;
+    transition: 800ms;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em #fff, -1em 0.5em #fff;
     }
-  
-    40% {
-      transform: scaleY(1);
+
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em #fff, 0 0.5em #fff;
     }
-  }
+
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em #fff, 1em 0.5em #fff;
+    }
+
+    100% {
+        box-shadow: 1em -0.5em #fff, -1em 0.5em #fff;
+    }
+}
+
+@keyframes after6 {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em #fff, -0.5em -1em #fff;
+    }
+
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 #fff, -0.5em 0 #fff;
+    }
+
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em #fff, -0.5em 1em #fff;
+    }
+
+    100% {
+        box-shadow: 0.5em 1em #fff, -0.5em -1em #fff;
+    }
+}
+
 /*  */
 
 
@@ -123,6 +162,7 @@ button:active {
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
+    transition: all 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 #notes {
@@ -131,7 +171,7 @@ button:active {
     align-items: center;
     justify-content: center;
     height: 100%;
-    opacity: 0;
+    /* opacity: 0; */
     transition: 800ms;
     width: 100%;
 }
@@ -141,20 +181,21 @@ button:active {
     margin-top: 20px;
 }
 
-#loading-bar{
+#loading-bar {
     border: 1px solid grey;
     width: 180px;
     height: 5px;
     overflow: hidden;
 }
-#progress{
+
+#progress {
     background-color: white;
     height: 100%;
     width: 0%;
     transition: all 13s cubic-bezier(0.455, 0.030, 0.515, 0.955);
 }
 
-#progress-info{
+#progress-info {
     color: rgb(177, 177, 177) !important;
     font-size: 80%;
     margin: 0;
@@ -174,33 +215,95 @@ button:active {
 #c1 {
     background-image: url(./asset/portrait/1.jpg);
 }
+
 #c2 {
     background-image: url(./asset/portrait/2.jpg);
 }
+
 #c4 {
     background-image: url(./asset/portrait/4.jpg);
 }
+
 #c5 {
     background-image: url(./asset/portrait/5.jpg);
 }
+
 #c9 {
     background-image: url(./asset/portrait/9.jpg);
 }
+
 #c10 {
     background-image: url(./asset/portrait/10.jpg);
 }
+
 #c11 {
     background-image: url(./asset/portrait/11.jpg);
 }
+
 #c12 {
     background-image: url(./asset/portrait/12.jpg);
 }
+
 #c13 {
     background-image: url(./asset/portrait/13.jpg);
 }
+
 #c14 {
     background-image: url(./asset/portrait/14.jpg);
 }
+
 #c15 {
     background-image: url(./asset/portrait/15.jpg);
+}
+
+#c16 {
+    background-image: url(./asset/portrait/16.jpg);
+}
+
+#c17 {
+    background-image: url(./asset/portrait/17.jpg);
+}
+
+#c18 {
+    background-image: url(./asset/portrait/18.jpg);
+}
+
+#c19 {
+    background-image: url(./asset/portrait/19.jpg);
+}
+
+#c20 {
+    background-image: url(./asset/portrait/20.jpg);
+}
+
+#c22 {
+    background-image: url(./asset/portrait/22.jpg);
+}
+
+#c23 {
+    background-image: url(./asset/portrait/23.jpg);
+}
+
+#c24 {
+    background-image: url(./asset/portrait/24.jpg);
+}
+
+#c25 {
+    background-image: url(./asset/portrait/25.jpg);
+}
+
+#c26 {
+    background-image: url(./asset/portrait/26.jpg);
+}
+
+#c27 {
+    background-image: url(./asset/portrait/27.jpg);
+}
+
+#c28 {
+    background-image: url(./asset/portrait/28.jpg);
+}
+
+#c29 {
+    background-image: url(./asset/portrait/29.jpg);
 }
