@@ -190,6 +190,32 @@ function letsgo() {
         c23.style.width = '0%'
         c24.style.width = '100%'
     }, 56360);
+
+    setTimeout(() => {
+        c24.style.width = '0%'
+        c25.style.width = '100%'
+    }, 56360);
+
+    setTimeout(() => {
+        c25.style.width = '0%'
+        c26.style.width = '100%'
+    }, 58440);
+
+    setTimeout(() => {
+        c26.style.width = '0%'
+        c27.style.width = '100%'
+    }, 60520);
+
+    setTimeout(() => {
+        c27.style.width = '0%'
+        c28.style.width = '100%'
+    }, 62600);
+
+    setTimeout(() => {
+        c28.style.width = '0%'
+        c29.style.width = '100%'
+    }, 64.68);
+
 }
 
 // 2.08
