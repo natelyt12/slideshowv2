@@ -29,6 +29,10 @@ button {
     color: white;
 }
 
+button:hover{
+    background-color: #ffffff1e;
+}
+
 button:active {
     border: white 1px solid;
 }
@@ -39,26 +43,6 @@ button:active {
 
 #info {
     width: 50px;
-}
-
-#video {
-    padding: 5px 10px;
-}
-
-.uwu-con {
-    position: absolute;
-    border: 1px solid rgb(59, 59, 59);
-    padding: 5px 10px;
-    margin-left: 5px;
-    bottom: 200px;
-    width: 284px;
-    height: 470px;
-    left: -320px;
-    transition: all 800ms cubic-bezier(0.375, 0.290, 0.005, 1.210);
-    z-index: 3;
-    background-image: url(./asset/uwu.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 #info-container {
@@ -161,12 +145,19 @@ button:active {
     border: 1px solid grey;
     width: 180px;
     height: 5px;
+    overflow: hidden;
 }
 #progress{
     background-color: white;
     height: 100%;
     width: 0%;
-    transition: all 6000ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    transition: all 13s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+#progress-info{
+    color: rgb(177, 177, 177) !important;
+    font-size: 80%;
+    margin: 0;
 }
 
 
@@ -177,7 +168,7 @@ button:active {
     z-index: -1;
     background-size: cover;
     background-position: center;
-    transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transition: all 1600ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 #c1 {
@@ -185,9 +176,6 @@ button:active {
 }
 #c2 {
     background-image: url(./asset/portrait/2.jpg);
-}
-#c3 {
-    background-image: url(./asset/portrait/3.jpg);
 }
 #c4 {
     background-image: url(./asset/portrait/4.jpg);

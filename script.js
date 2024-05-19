@@ -6,7 +6,6 @@ let notes = document.getElementById('notes')
 // Image variable
 let c1 = document.getElementById('c1')
 let c2 = document.getElementById('c2')
-let c3 = document.getElementById('c3')
 let c4 = document.getElementById('c4')
 let c5 = document.getElementById('c5')
 let c9 = document.getElementById('c9')
@@ -24,7 +23,8 @@ function start() {
     let progress = document.getElementById('progress')
     setTimeout(() => {
         progress.style.width = '100%'
-    }, 1000);
+    }, 4000);
+    progInf()
     startbtn.style.background = 'white'
     startbtn.style.transition = '500ms'
     startbtn.style.color = 'black'
@@ -38,9 +38,32 @@ function start() {
     letsgo()
 }
 
+// Is a fake load XD:)
+function progInf() {
+    let prog = document.getElementById('progress-info')
+    prog.innerText = 'Waiting...'
+    setTimeout(() => {
+        prog.innerText = 'Optimizing...'
+    }, 4500);
+    setTimeout(() => {
+        prog.innerText = 'Loading images...'
+    }, 5000);
+    setTimeout(() => {
+        prog.innerText = 'Loading video...'
+    }, 11000);
+    setTimeout(() => {
+        prog.innerText = 'Loading animation...'
+    }, 14000);
+    setTimeout(() => {
+        prog.innerText = 'Optimizing again...'
+    }, 15000);
+    setTimeout(() => {
+        prog.innerText = 'Done'
+    }, 16500);
+}
+
 document.getElementById('video').addEventListener("click", () => {
-    var toggle = document.getElementsByClassName("uwu-con")[0];
-    toggle.classList.toggle('on');
+    document.getElementsByClassName('image-slideshow')[0].style.transform = 'translate(-50%,-50%) scale(130%)'
 })
 
 document.getElementById('info').addEventListener("click", () => {
@@ -49,71 +72,58 @@ document.getElementById('info').addEventListener("click", () => {
 })
 
 function letsgo() {
-    notes.style.opacity = '100%'
+    setTimeout(() => {
+        notes.style.opacity = '100%'
+    }, 2000);
     setTimeout(() => {
         notes.style.opacity = '0%'
-    }, 7000);
+    }, 17600);
 
+    // Slide here
     setTimeout(() => {
         notes.style.width = '0%'
         c1.style.width = '100%'
-    }, 7900);
+    }, 19000);
     setTimeout(() => {
         c1.style.width = '0%'
         c2.style.width = '100%'
-    }, 9100);
+    }, 21000);
     setTimeout(() => {
         c2.style.width = '0%'
-        c3.style.width = '100%'
-    }, 9900);
-    setTimeout(() => {
-        c3.style.width = '0%'
         c4.style.width = '100%'
-    }, 11100);
+    }, 23000);
     setTimeout(() => {
         c4.style.width = '0%'
         c5.style.width = '100%'
-    }, 11900);
+    }, 25000);
     setTimeout(() => {
         c5.style.width = '0%'
         c9.style.width = '100%'
-    }, 13100);
+    }, 27000);
     setTimeout(() => {
         c9.style.width = '0%'
         c10.style.width = '100%'
-    }, 13900);
+    }, 29000);
     setTimeout(() => {
         c10.style.width = '0%'
         c11.style.width = '100%'
-    }, 15100);
+    }, 31000);
     setTimeout(() => {
         c11.style.width = '0%'
         c12.style.width = '100%'
-    }, 15900);
+    }, 33000);
     setTimeout(() => {
         c12.style.width = '0%'
         c13.style.width = '100%'
-    }, 17100);
+    }, 35000);
     setTimeout(() => {
         c13.style.width = '0%'
         c14.style.width = '100%'
-    }, 17900);
+    }, 37000);
     setTimeout(() => {
         c14.style.width = '0%'
         c15.style.width = '100%'
-    }, 19100);
-    setTimeout(() => {
-        c15.style.width = '0%'
-        c16.style.width = '100%'
-    }, 19900);
-    setTimeout(() => {
-        c16.style.width = '0%'
-        c17.style.width = '100%'
-    }, 21100);
-    setTimeout(() => {
-        c17.style.width = '0%'
-        c18.style.width = '100%'
-    }, 21900);
+    }, 39000);
 }
 
-// dài: 12, ngắn: 8
+// 2
